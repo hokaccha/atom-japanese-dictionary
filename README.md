@@ -20,5 +20,5 @@ $ apm install japanese-dictionary
 ## Settings
 
 |name|description|value|default|
-|----|---|--|-----|
+|----|-----------|-----|-------|
 |Service|検索サービス|weblio/alc|weblio|
