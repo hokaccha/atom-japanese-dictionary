@@ -1,0 +1,3 @@
+'atom-workspace':
+  'ctrl-alt-x': 'japanese-dictionary:open-by-selection'
+  'ctrl-alt-shift-X': 'japanese-dictionary:open-by-input'
