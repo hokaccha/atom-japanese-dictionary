@@ -13,6 +13,11 @@ class JapaneseDictionaryView extends View
     super
     @service = atom.config.get('japanese-dictionary.service')
 
+    atom.commands.add @element,
+      'core:copy': => @webview.copy()
+      'core:paste': => @webview.paste()
+      'core:cut': => @webview.cut()
+
   attached: ->
     word = encodeURIComponent(@word)
     @webview ?= @element.querySelector('webview')
