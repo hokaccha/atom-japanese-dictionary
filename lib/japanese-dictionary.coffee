@@ -41,8 +41,7 @@ module.exports =
 
   openBySelection: ->
     editor = atom.workspace.getActiveTextEditor()
-    selection = editor.getSelectedText()
-    @open(selection.getText())
+    @open(editor.getSelectedText())
 
   openDialog: ->
     dialog = new Dialog(onConfirm: (text) => @open(text))
